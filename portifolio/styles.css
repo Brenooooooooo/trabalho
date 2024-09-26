@@ -1,0 +1,543 @@
+
+body {
+    background-image: url(fotos/15517737_5614852.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-color: white;
+    color: black;
+    transition: background-color 0.4s, color 0.4s, background-image 0.4s;
+}
+
+
+header, main, footer {
+    padding: 0;
+    margin: 0;
+}
+
+body, html {
+    background-color: rgba(255, 0, 0, 0); 
+
+        height: 100%; 
+        margin: 0;
+    
+}
+
+main, header, footer {
+    background-color: rgba(255, 0, 0, 0); 
+}
+
+
+header {
+    position: relative;
+    z-index: 1000;
+}
+
+.menu-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: black;
+}
+
+
+.hamburger {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 25px;
+    cursor: pointer;
+}
+
+
+.bar {
+    width: 30px;
+    height: 4px;
+    background-color: #000000;
+    margin: 3px 0;
+    transition: all 0.3s ease;
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000; 
+}
+
+.nav-menu {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 250px;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.9);
+    transform: translateX(100%);
+    transition: transform 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav-menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-menu li {
+    margin: 15px 0;
+}
+
+.nav-menu a {
+    color: #000000;
+    text-decoration: none;
+    font-size: 24px;
+    transition: color 0.3s ease;
+}
+
+.nav-menu a:hover {
+    color: #ff0000;
+}
+
+.nav-menu.active {
+    transform: translateX(0);
+}
+
+
+
+main {
+   
+    
+    text-align: center;
+ 
+}
+
+#inner {
+    height: auto;
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#imgs {
+    display: flex;
+    flex-wrap: wrap; 
+    width: 95%; 
+    justify-content: center; 
+    gap: 15px; 
+    padding: 20px; 
+    align-items: center; 
+}
+
+
+.foto {
+    flex: 1 1 45%; 
+    height: auto;
+    border: solid 1px rgba(255, 0, 0, 0); 
+    box-sizing: border-box; 
+    max-width: 500px; 
+}
+
+.foto img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.foto a:hover {
+    background-color: rgba(255, 0, 0, 0); 
+    text-decoration: underline; 
+}
+
+.foto a {
+    display: inline-block; 
+    margin-top: 10px; 
+    padding: 10px 15px; 
+    background-color: rgba(255, 0, 0, 0); 
+    color: #001aff; 
+    text-decoration: none; 
+    border-radius: 5px; 
+    font-weight: bold;
+}
+
+section {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: all 0.5s ease-in-out;
+}
+
+section.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.text-block {
+    max-width: 1000px; 
+    margin: 0 auto; 
+    line-height: 1.5; 
+}
+
+a {
+    display: inline-block; 
+    margin-top: 10px; 
+    padding: 10px 15px; 
+    background-color: rgba(255, 0, 0, 0);
+    color: #001aff;  
+    text-decoration: none; 
+ 
+}
+
+footer {
+    text-align: center;
+    background-color: #222;
+    color: #fff;
+    padding: 20px 0;
+}
+
+.informacoes {
+   background-color: rgba(0, 0, 0, 0) ;
+    gap: 15px; 
+    padding: 20px; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form-section, .info-section {
+    width: 100%;
+    max-width: 600px;
+}
+
+.form-section form {
+    display: flex;
+    flex-direction: column;
+}
+
+input, textarea {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: none;
+    border-bottom: 1px solid #ffffff;
+    background-color: transparent;
+    color: inherit;
+}
+
+button {
+    background-color: #000000;
+    color: #fff;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+.social-icons a {
+    color: #fff;
+    margin: 0 10px;
+    font-size: 24px;
+}
+
+.subscribe-form {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.subscribe-form input[type="email"] {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+.subscribe-form button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+.exp {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;  
+    margin-left: -40px; 
+}
+
+    
+.expp {
+    width: auto; 
+    margin: 0 10px;
+    
+}
+    
+.expp img {
+    width: 50px; 
+    height: 50px;
+    object-fit: cover;
+}
+
+
+.dark {
+    background-image: url(fotos/conceito-de-prisma-preto-ai-gerado.jpg);
+    color: rgb(255, 255, 255);
+}
+
+.dark body {
+    background-image: none;
+    background-color: black;
+    color: white;
+}
+
+.dark .menu-container {
+    background-color: rgb(29, 29, 29);
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+#check {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 36px;
+    opacity: 0;
+    z-index: 1;
+    cursor: pointer;
+}
+
+span {
+    position: relative;
+    width: 60px;
+    height: 30px;
+    display: inline-block;
+    background-color: white;
+    border-radius: 15px;
+    transition: 0.5s;
+}
+
+span::before {
+    content: "\2600"; 
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    left: 3px;
+    top: 3px;
+    font-size: 18px; 
+    transition: 0.5s;
+    border-radius: 50%;
+    background-color: transparent;
+    z-index: 3;
+}
+
+#check:checked + label span::before {
+    content: "\1F319"; 
+    left: calc(100% - 27px);
+    color: white;
+}
+
+
+.espaco {
+    height: 95px;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+
+
+
+@media only screen and (max-width: 600px) {
+    body {
+        background-image: url(fotos/15517737_5614852.jpg);
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+        background-color: white;
+        color: black;
+        transition: background-color 0.4s, color 0.4s, background-image 0.4s;
+    }
+    
+    img {
+        max-width: 100%; 
+        margin: 0 auto; 
+      }
+ 
+    .nav-menu {
+        width: 100%;
+        height: 100vh;
+        background-color: rgba(0, 0, 0, 0.9);
+        transform: translateX(100%);
+        transition: transform 0.3s ease;
+    }
+
+    .nav-menu.active {
+        transform: translateX(0);
+    }
+    .navbar {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        z-index: 1000; 
+    }
+
+    #inner {
+        height: auto;
+        padding: 20px;
+    }
+
+    .foto {
+        flex: 1 1 100%;
+        max-width: 100%;
+    }
+
+    .informacoes {
+        flex-direction: column;
+    }
+
+    .form-section, .info-section {
+        width: 100%;
+    }
+
+    footer {
+        padding: 10px;
+    }
+
+    .subscribe-form {
+        flex-direction: column;
+    }
+
+    .subscribe-form input[type="email"] {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+    .menu {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    }
+    
+    .item {
+        display: inline-block;
+        width: 50%;
+    }
+    
+    nav a {
+        margin: 0 px;
+        text-decoration: none;
+        color: #fff;
+        font-size: 10px;
+    }
+    .exp {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;  
+        margin-left: -40px; 
+    }
+        
+    .expp {
+        display: flex;
+        flex-direction: column; 
+        align-items: center;   
+        justify-content: center; 
+        width: auto; 
+        margin: 0 10px;
+        text-align: center;      
+    }
+        
+    .expp img {
+        width: 50px; 
+        height: 50px;
+        object-fit: cover;
+    }
+    .espaco {
+            height: 95px;
+            background-color: rgba(0, 0, 0, 0);
+    }
+    
+    
+    
+    .dark {
+        background-image: url(fotos/conceito-de-prisma-preto-ai-gerado.jpg);
+        color: rgb(255, 255, 255);
+    }
+    
+    .dark body {
+        background-image: none;
+        background-color: black;
+        color: white;
+    }
+    
+    .dark .menu-container {
+        background-color: rgb(29, 29, 29);
+    }
+    
+    .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+    
+    #check {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 60px;
+        height: 36px;
+        opacity: 0;
+        z-index: 1;
+        cursor: pointer;
+    }
+    
+    span {
+        position: relative;
+        width: 60px;
+        height: 30px;
+        display: inline-block;
+        background-color: white;
+        border-radius: 15px;
+        transition: 0.5s;
+    }
+    
+    span::before {
+        content: "\2600";
+        position: absolute;
+        width: 24px;
+        height: 24px;
+        left: 3px;
+        top: 3px;
+        font-size: 18px; 
+        transition: 0.5s;
+        border-radius: 50%;
+        background-color: transparent;
+        z-index: 3;
+    }
+    
+    #check:checked + label span::before {
+        content: "\1F319"; 
+        left: calc(100% - 27px);
+        color: white;
+    }
+
+.espaco {
+    height: 95px;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+}

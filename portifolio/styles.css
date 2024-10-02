@@ -1,4 +1,6 @@
-
+#trans{
+    background-color: rgba(0,0,0,0.5);
+}
 body {
     background-image: url(fotos/15517737_5614852.jpg);
     background-size: cover;
